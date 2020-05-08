@@ -1,0 +1,19 @@
+{
+  "name": "xwordinfo-json-to-pdf",
+  "version": "1.0.0",
+  "description": "Render crossword puzzles in the xwordinfo.com JSON format into pretty, printable PDFs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marvin Klein",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-marvinklein": "git+https://github.com/marvinklein/eslint-config.git"
+  },
+  "dependencies": {
+    "dateformat": "^3.0.3",
+    "pdfkit": "^0.11.0",
+    "unescape": "^1.0.1"
+  }
+}
