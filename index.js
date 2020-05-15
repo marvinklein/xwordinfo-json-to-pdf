@@ -33,7 +33,7 @@ const data = JSON.parse(fs.readFileSync(argvInputFilename));
 
 const argvOutputFilename = process.argv[3];
 const doc = new PDFDocument({ margin: 0 });
-const outputPath = path.join(process.cwd(), argvOutputFilename);
+const outputPath = argvOutputFilename;
 fs.mkdirSync(path.dirname(outputPath), { recursive: true }); // ensure the target dir exists
 doc.pipe(fs.createWriteStream(outputPath));
 
